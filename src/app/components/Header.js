@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const Header = () => {
     return (
@@ -15,7 +16,7 @@ const Header = () => {
                         aria-controls="navbarSupportedContent3"
                         aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <span className="[&>svg]:w-7">
+                        {/* <span className="[&>svg]:w-7">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
@@ -26,27 +27,18 @@ const Header = () => {
                                     d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
                                     clip-rule="evenodd" />
                             </svg>
-                        </span>
+                        </span> */}
                     </button>
-
-                    <div
-                        className="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto"
-                        id="navbarSupportedContent3"
-                        data-te-collapse-item>
-                        <a className="pr-2 text-xl text-black dark:text-neutral-200" href="#"
-                        >Navbar</a
-                        >
-                        <ul
-                            className="list-style-none mr-auto flex flex-col pl-0 lg:flex-row"
+                    {/* <img src="" alt='profile'/> */}
+                    <div className="!visible mt-2 hidden flex-grow basis-[100%] items-center lg:mt-0 lg:!flex lg:basis-auto" id="navbarSupportedContent3" data-te-collapse-item>
+                        <Image  className="h-auto max-w-full" src="/icon.png" width={120} height={70} alt='logo'/>
+                        {/* <a className="pr-2 text-xl text-black dark:text-neutral-200" href="#">Navbar</a> */}
+                        <ul className="list-style-none mr-auto flex flex-col pl-0 lg:flex-row"
                             data-te-navbar-nav-ref>
                             <li className="my-4 lg:my-0 lg:pr-2" data-te-nav-item-ref>
-                                <a
-                                    className="active disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-                                    aria-current="page"
+                                <a className="active disabled:text-black/30 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400" aria-current="page"
                                     href="#"
-                                    data-te-nav-link-ref
-                                >Home</a
-                                >
+                                    data-te-nav-link-re>Home</a>
                             </li>
                             <li className="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
                                 <a
@@ -74,6 +66,7 @@ const Header = () => {
                     </div>
                 </div>
             </nav>
+            {/* <Image src="/BG.png"  className="h-auto max-w-full" height={1000} width={1370} alt='profile'/> */}
         </div>
 
     )
