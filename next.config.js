@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images:{
-    domains: ['65.20.79.129','images.bhaskarassets.com','ngs-space1.sgp1.digitaloceanspaces.com'],
+    domains: ['65.20.79.129','images.bhaskarassets.com','ngs-space1.sgp1.digitaloceanspaces.com','tecdn.b-cdn.net'],
     // remotePatterns: [
     //   {
     //     protocol: 'http',
