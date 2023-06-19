@@ -30,6 +30,7 @@ const page = async ({ params }) => {
   // console.log(state?.data?.attributes?.name);
   // console.log(sub_district?.data?.attributes?.name);
   // console.log({authorities});
+  console.log(village_galleries.data[0]);
   const noticeArr = notices?.data;
   const newsArr = news?.data;
   // console.log(newsArr);
